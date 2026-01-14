@@ -16,7 +16,6 @@
 
 define_macro:
   HOST: localhost
-  PRIMARY_DOMAIN: hackerchat.net
   ADMIN: "admin@localhost"
   PORT_C2S: 5222
   PORT_C2S_TLS: 5223
@@ -30,7 +29,7 @@ define_macro:
 
 hosts:
   - HOST
-  - PRIMARY_DOMAIN
+  - "hackerchat.net"
 
 loglevel: info
 
