@@ -12,7 +12,7 @@ services:
       # Optional: Persist Mnesia database
       - /home/joe/portainer/ejabberd/ejabberd_data:/var/lib/ejabberd
       # Optional: Mount custom configuration file
-      # ./ejabberd.yml:/home/ejabberd/conf/ejabberd.yml
+      - ./ejabberd.yml:/home/ejabberd/conf/ejabberd.yml
     restart: unless-stopped
 
 # Optional: Define volumes for data persistence
