@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  ejabberd:
+    image: ejabberd/ecs:latest
+    container_name: ejabberd
+    ports:
+      - "5222:5222" # Client-to-server (C2S) XMPP
+      - "5269:5269" # Server-to-server (S2S) XMPP
+      - "5280:5280" # BOSH/HTTP polling
+      - "5443:5443" # ejabberd Web Admin
+    volumes:
+      # Optional: Persist Mnesia database
+      - /home/joe/portainer/ejabberd/ejabberd_data:/var/lib/ejabberd
+      # Optional: Mount custom configuration file
+      # ./ejabberd.yml:/home/ejabberd/conf/ejabberd.yml
+    restart: unless-stopped
+
+# Optional: Define volumes for data persistence
+# volumes:
+#   ejabberd_data:
