@@ -11,8 +11,8 @@ services:
     volumes:
       # Optional: Persist Mnesia database
       - /home/joe/portainer/ejabberd/ejabberd_data:/var/lib/ejabberd
-      - /etc/letsencrypt/live/hackerchat.net/fullchain.pem:/etc/letsencrypt/live/hackerchat.net/fullchain.pem
-      - /etc/letsencrypt/live/hackerchat.net/privkey.pem:/etc/letsencrypt/live/hackerchat.net/privkey.pem
+      - /home/certs/fullchain.pem:/etc/letsencrypt/live/hackerchat.net/fullchain.pem
+      - /home/certs/privkey.pem:/etc/letsencrypt/live/hackerchat.net/privkey.pem
       # Optional: Mount custom configuration file
       - ./ejabberd.yml:/home/ejabberd/conf/ejabberd.yml
     restart: unless-stopped
