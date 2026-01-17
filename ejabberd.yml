@@ -246,6 +246,14 @@ acme:
    ca_url: "https://acme-staging-v02.api.letsencrypt.org/directory"
 
 modules:
+  mod_conversejs: 
+    conversejs_css: auto
+    conversejs_script: auto
+    conversejs_plugins: ["libsignal"]
+    default_domain: hackerchat.net
+    websocket_url: "ws://hackerchat.net:5280/websocket"
+    conversejs_options:
+      locked_domain: hackerchat.net
   mod_adhoc: {}
   mod_adhoc_api: {}
   mod_admin_extra: {}
