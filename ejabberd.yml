@@ -28,8 +28,8 @@ define_macro:
   PORT_PROXY65: 7777
 
 hosts:
-  - HOST
   - "hackerchat.net"
+  - HOST
 
 loglevel: info
 
