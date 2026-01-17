@@ -81,6 +81,7 @@ listen:
       /upload: mod_http_upload
       /ws: ejabberd_http_ws
       /oauth: ejabberd_oauth
+      /conversejs: mod_conversejs
   -
     port: PORT_HTTP
     ip: "::"
