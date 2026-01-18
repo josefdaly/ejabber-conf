@@ -240,7 +240,7 @@ modules:
   mod_conversejs:
     conversejs_plugins: ["libsignal"]
     websocket_url: "wss://hackerchat.net:5443/ws"
-    conversejs_resources: "https://hackerchat-static.sfo3.cdn.digitaloceanspaces.com/dist/"
+    conversejs_resources: "https://hackerchat-static.sfo3.cdn.digitaloceanspaces.com/dist"
     conversejs_script: "https://hackerchat-static.sfo3.cdn.digitaloceanspaces.com/dist/converse.min.js"
     conversejs_css: "https://hackerchat-static.sfo3.cdn.digitaloceanspaces.com/dist/converse.min.css"
     conversejs_options:
