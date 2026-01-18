@@ -251,7 +251,7 @@ modules:
     conversejs_css: "https://cdn.conversejs.org/12.0.0/dist/converse.min.css"
     conversejs_script: "https://cdn.conversejs.org/12.0.0/dist/converse.min.js"
     conversejs_plugins: ["libsignal"]
-    default_domain: hackerchat.net
+    # default_domain: hackerchat.net
     websocket_url: "wss://hackerchat.net:5443/ws"
     conversejs_options:
       locked_domain: hackerchat.net
