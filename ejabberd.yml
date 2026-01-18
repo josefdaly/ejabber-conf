@@ -239,6 +239,9 @@ modules:
   mod_conversejs:
     conversejs_plugins: ["libsignal"]
     websocket_url: "wss://hackerchat.net:5443/ws"
+    conversejs_options:
+      allow_registration: false
+      locked_domain: HOST
   mod_adhoc: {}
   mod_adhoc_api: {}
   mod_admin_extra: {}
