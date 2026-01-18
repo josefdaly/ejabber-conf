@@ -81,7 +81,7 @@ listen:
       /upload: mod_http_upload
       /ws: ejabberd_http_ws
       /oauth: ejabberd_oauth
-      /conversejs: mod_conversejs
+      # /conversejs: mod_conversejs
   -
     port: PORT_HTTP
     ip: "::"
@@ -247,14 +247,14 @@ acme:
    ca_url: "https://acme-staging-v02.api.letsencrypt.org/directory"
 
 modules:
-  mod_conversejs: 
-    conversejs_css: "https://cdn.conversejs.org/12.0.0/dist/converse.min.css"
-    conversejs_script: "https://cdn.conversejs.org/12.0.0/dist/converse.min.js"
-    conversejs_plugins: ["libsignal"]
-    # default_domain: hackerchat.net
-    websocket_url: "wss://hackerchat.net:5443/ws"
-    conversejs_options:
-      locked_domain: hackerchat.net
+  # mod_conversejs: 
+  #   conversejs_css: "https://cdn.conversejs.org/12.0.0/dist/converse.min.css"
+  #   conversejs_script: "https://cdn.conversejs.org/12.0.0/dist/converse.min.js"
+  #   conversejs_plugins: ["libsignal"]
+  #   # default_domain: hackerchat.net
+  #   websocket_url: "wss://hackerchat.net:5443/ws"
+  #   conversejs_options:
+  #     locked_domain: hackerchat.net
   mod_adhoc: {}
   mod_adhoc_api: {}
   mod_admin_extra: {}
