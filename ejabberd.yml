@@ -311,6 +311,7 @@ modules:
     ## Think twice before enabling registration from any
     ## address. See the Jabber SPAM Manifesto for details:
     ## https://github.com/ge0rg/jabber-spam-fighting-manifesto
+    access: all
     ip_access:
       - 104.248.222.3
   mod_roster:
