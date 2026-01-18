@@ -15,7 +15,7 @@
 ###
 
 define_macro:
-  HOST: localhost
+  HOST: "hackerchat.net"
   ADMIN: "admin@localhost"
   PORT_C2S: 5222
   PORT_C2S_TLS: 5223
@@ -28,13 +28,10 @@ define_macro:
   PORT_PROXY65: 7777
 
 hosts:
-  - "hackerchat.net"
   - HOST
+  - localhost
 
 loglevel: info
-
-##certfiles:
-##  - /home/ejabberd/conf/server.pem
 
 ca_file: "/home/ejabberd/conf/cacert.pem"
 
@@ -42,8 +39,6 @@ ca_file: "/home/ejabberd/conf/cacert.pem"
 certfiles:
   - /etc/letsencrypt/live/hackerchat.net/fullchain.pem
   - /etc/letsencrypt/live/hackerchat.net/privkey.pem
-##
-##ca_file: "/etc/letsencrypt/live/localhost/fullchain.pem"
 
 listen:
   -
@@ -88,12 +83,6 @@ listen:
     module: ejabberd_http
     request_handlers:
       /admin: ejabberd_web_admin
-  -
-    port: PORT_BROWSER
-    ip: "::"
-    module: ejabberd_http
-    request_handlers:
-      /: ejabberd_web_admin
   -
     port: PORT_STUN
     ip: "::"
